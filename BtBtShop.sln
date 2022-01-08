@@ -2,6 +2,12 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtBtShop.Entity", "BtBtShop.Entity\BtBtShop.Entity.csproj", "{A5BBCC41-4430-4C05-A951-4953EBEBDB3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtBtShop.Dal", "BtBtShop.Dal\BtBtShop.Dal.csproj", "{3CFD506F-2B07-43A8-84C7-A118C8AC87AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtBtShop.Business", "BtBtShop.Business\BtBtShop.Business.csproj", "{E69318EF-59B1-4172-8E40-0410BDCECE8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BtBtShop.UI", "BtBtShop.UI\BtBtShop.UI.csproj", "{065420A8-A8AB-4CCC-B73C-C388FCBB80B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +18,17 @@ Global
 		{A5BBCC41-4430-4C05-A951-4953EBEBDB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5BBCC41-4430-4C05-A951-4953EBEBDB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5BBCC41-4430-4C05-A951-4953EBEBDB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFD506F-2B07-43A8-84C7-A118C8AC87AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFD506F-2B07-43A8-84C7-A118C8AC87AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFD506F-2B07-43A8-84C7-A118C8AC87AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFD506F-2B07-43A8-84C7-A118C8AC87AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E69318EF-59B1-4172-8E40-0410BDCECE8E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E69318EF-59B1-4172-8E40-0410BDCECE8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E69318EF-59B1-4172-8E40-0410BDCECE8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E69318EF-59B1-4172-8E40-0410BDCECE8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{065420A8-A8AB-4CCC-B73C-C388FCBB80B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{065420A8-A8AB-4CCC-B73C-C388FCBB80B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{065420A8-A8AB-4CCC-B73C-C388FCBB80B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{065420A8-A8AB-4CCC-B73C-C388FCBB80B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
