@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using System.Threading.Tasks;
 using BtBtShop.Business.Abstract;
-using BtBtShop.Entity.Entities;
 using BtBtShop.UI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -12,18 +11,20 @@ namespace BtBtShop.UI.Controllers
     {
         private readonly ILogger<HomeController> _logger;
         private readonly IProductService _productService;
+        private readonly IUserService _userService;
 
-        public HomeController(ILogger<HomeController> logger, IProductService productService)
+        public HomeController(ILogger<HomeController> logger, IProductService productService,
+            IUserService userService)
         {
             _logger = logger;
             _productService = productService;
+            _userService = userService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var products = _productService.GetProducts();
-           
-            return View(products);
+           var users= await _userService.GetAllUsers();
+           return View(users);
         }
 
         public IActionResult Privacy()

@@ -4,7 +4,7 @@ using BtBtShop.Dal.Abstract;
 using BtBtShop.Dal.DbContexts;
 using BtBtShop.Entity.Entities;
 
-namespace BtBtShop.Dal.Concerete
+namespace BtBtShop.Dal.Concrete
 {
     public class ProductDal : IProductDal
     {
@@ -14,6 +14,10 @@ namespace BtBtShop.Dal.Concerete
         {
             _dbContext = dbContext;
         }
+        //CRUD operations
+        // Create, Read, Update, Delete
+        
+        
         
         public void Add(Product product)
         {

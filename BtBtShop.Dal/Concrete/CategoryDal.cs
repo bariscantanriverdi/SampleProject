@@ -2,7 +2,7 @@
 using BtBtShop.Dal.DbContexts;
 using BtBtShop.Entity.Entities;
 
-namespace BtBtShop.Dal.Concerete
+namespace BtBtShop.Dal.Concrete
 {
     public class CategoryDal : ICategoryDal
     {

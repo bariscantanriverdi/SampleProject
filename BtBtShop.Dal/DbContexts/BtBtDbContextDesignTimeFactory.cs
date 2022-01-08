@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace BtBtShop.Dal.DbContexts
 {
-    class BtBtDbContextDesignTimeFactory : IDesignTimeDbContextFactory<BtBtShopDbContext>
+    public class BtBtDbContextDesignTimeFactory : IDesignTimeDbContextFactory<BtBtShopDbContext>
     {
         public BtBtShopDbContext CreateDbContext(string[] args)
         {

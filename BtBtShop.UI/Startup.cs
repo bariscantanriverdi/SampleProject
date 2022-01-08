@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BtBtShop.Business.Abstract;
-using BtBtShop.Business.Concerete;
+using BtBtShop.Business.Concrete;
 using BtBtShop.Dal.Abstract;
-using BtBtShop.Dal.Concerete;
+using BtBtShop.Dal.Concrete;
 using BtBtShop.Dal.DbContexts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,10 +32,12 @@ namespace BtBtShop.UI
             IServiceCollection services)
         {
             services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IUserService, UserService>();
+            
             services.AddScoped<IProductDal, ProductDal>();
+            services.AddScoped(typeof(IBaseDal <> ), typeof(BaseDal <> ));  
 
             services.AddScoped<BtBtShopDbContext>();
-            
             services.AddDbContext<BtBtShopDbContext>(options => 
                 options.UseSqlServer(@"Data Source=Localhost;Initial Catalog=BtBtShop;Trusted_Connection=Yes"));
 
